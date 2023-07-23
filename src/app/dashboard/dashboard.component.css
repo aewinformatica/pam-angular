@@ -1,0 +1,7 @@
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  background-image: url("../../assets/dashboard_background.png");
+  background-repeat: no-repeat;
+ }

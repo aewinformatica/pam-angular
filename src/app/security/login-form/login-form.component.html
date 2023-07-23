@@ -1,0 +1,43 @@
+<main class="main">
+
+  <div class="leftside">
+    <div class="div-logo">
+      <a href="/dashboard/">
+        <img class="logo" src="../../../assets/logo.jpg">
+      </a>
+    </div>
+    <h3 class="welcome">Olá, bem-vindo!</h3>
+    <span>
+      <span>
+        <img src="../../../assets/illustration_dashboard.png" />
+      </span>
+    </span>
+  </div>
+  <div class="rightside">
+    <div class="div-form">
+      <div class="div-form-title">
+        <h4 class="form-title">Portal do Parceiro</h4>
+      </div>
+      <form autocomplete="off" >
+        <div class="div-inputs">
+          <div class="div-input">
+            <input class="input-form" type="email" name="email" placeholder="E-mail"
+              ngModel required #email>
+          </div>
+          <div class="div-input">
+            <input class="input-form" type="password" name="email" placeholder="Senha"
+            ngModel required #password>
+          </div>
+        </div>
+        <div class="div-forgot-password">
+          <a class="a-forgot-password" href="/auth/reset-password/">Esqueceu a senha?</a>
+        </div>
+        <div>
+          <button class="button-submit" type="submit" label="Login" (click)="login(email.value, password.value); password.value=''">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</main>
+
